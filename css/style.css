@@ -1070,7 +1070,7 @@ font-family: 'Neue Montreal';
 /* behind-the-scenes end  */
 /* the-proof  start  */
 .the-proof .why-grid {
-    grid-template-columns: 1fr 1.4fr;
+    grid-template-columns: 1fr 1.3fr;
 }
 
 .the-proof .features-grid {
@@ -1093,5 +1093,10 @@ font-family: 'Neue Montreal';
 }
 .the-proof .feature-card:hover span {
     color: #fff;
+}
+@media screen and (min-width:991px) {
+    .the-proof .feature-card {
+        padding: 40px;
+    }
 }
 /* the-proof end  */

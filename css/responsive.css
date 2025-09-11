@@ -249,6 +249,10 @@
 }
 
 @media screen and (max-width:991px){
+	.site-banner h1 {
+		max-width: 400px;
+		line-height: normal;
+	}
 	.footer-top .grid {
 		grid-template-columns: 100%;
 	}
@@ -280,6 +284,9 @@
 	}
 	.pf-head {
 		padding-right: 20px;
+	}
+	.linestyle {
+		bottom: 40px;
 	}
 }
 
@@ -318,6 +325,9 @@
 	}
 	.feature-card .count {
 		margin: 20px 0;
+	}
+	.footer-logo {
+		max-width: 120px;
 	}	
 }
 
