@@ -918,7 +918,7 @@ font-family: 'Neue Montreal';
 
 /* projects-featured start */
 .projects-featured {
-    padding: 40px 0 80px;
+    padding: 40px 0 120px;
     position: relative;
 }
 .projects-featured .linestyle {
@@ -927,7 +927,7 @@ font-family: 'Neue Montreal';
     right: 0;
     max-width: 1450px;
     margin: 0 auto;
-    bottom: 20px;
+    bottom: 90px;
 }
 .projects-featured .linestyle::before {
     background: var(--theme);
@@ -1071,10 +1071,14 @@ font-family: 'Neue Montreal';
 /* the-proof  start  */
 .the-proof .why-grid {
     grid-template-columns: 1fr 1.3fr;
+    align-items: center;
 }
-
+.the-proof.why-choose .item {
+    height: auto;
+}
 .the-proof .features-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 0;
 }
 .feature-card .count {
     margin: 44px 0;
@@ -1093,6 +1097,17 @@ font-family: 'Neue Montreal';
 }
 .the-proof .feature-card:hover span {
     color: #fff;
+}
+.the-proof .pf-line {
+    margin-right: -40px;
+    width: 100%;
+    margin-left: auto;
+    margin-bottom: 44px;
+}
+
+.the-proof .pf-line::after {
+    left: -25px;
+    right: 0;
 }
 @media screen and (min-width:991px) {
     .the-proof .feature-card {

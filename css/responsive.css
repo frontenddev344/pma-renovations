@@ -37,6 +37,10 @@
 	.footer-rating-box {
 		max-width: 220px;
 	}
+	.projects-featured .linestyle {
+		width: 95%;
+		left: 20px;
+	}
 }
 @media screen and (max-width:1400px){
 	.site-banner {
@@ -111,6 +115,10 @@
 	}
 	.footer-rating-box {
 		max-width: 200px;
+	}
+	.the-proof .pf-line {
+		margin-right: 0;
+		
 	}
 	
 }
@@ -245,6 +253,14 @@
 	}
 	.pf-meta {
 		gap: 22px;
+	}
+	.the-proof .pf-line {
+		margin-right: 0;
+		width: 98%;
+		margin-left: 20px;
+	}
+	.projects-gallery {
+		padding: 30px 0 30px;
 	}
 }
 
