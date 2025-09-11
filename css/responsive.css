@@ -354,5 +354,7 @@
 }
 
 @media screen and (max-width:480px){
-	
+	.site-banner {
+		height: 800px;
+	}
 }
