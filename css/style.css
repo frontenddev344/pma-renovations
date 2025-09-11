@@ -12,8 +12,6 @@
     --dark-bg:#152028;
     --theme:#48B206;
     --secondary-clr:#0070BD;
-    --helvetica:'Helvetica Neue';
-    --roboto:"Roboto", sans-serif;
     
 }
 body {
@@ -72,7 +70,7 @@ h4,
 h5,
 h6 {
     margin: 0;
-    font-family:var(--helvetica);
+    font-family: 'Neue Montreal';
     color:#fff;
 }
 
@@ -347,6 +345,9 @@ font-family: 'Neue Montreal';
     flex-direction: column;
     justify-content: center;
     height: 100%;
+    width: 100%;
+    max-width: 738px;
+    margin-left: auto;
 }
 .banner-wrap .container {
     height: 100%;
