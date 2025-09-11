@@ -218,9 +218,11 @@ h6 {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 32px;
+    gap: 16px;
 }
-
+.site-nav li.email, .site-nav li.phone {
+    margin-left: 40px;
+}
 .site-nav li a {
     color: #FFF;
     position: relative;
@@ -318,6 +320,11 @@ font-family: 'Neue Montreal';
     z-index: 2;
     padding-top: 300px;
 }
+.banner-wrap .grid {
+    grid-template-columns: 1.5fr 1fr;
+    gap: 24px;
+}
+
 .banner-vid {
     position: absolute;
     inset: 0;
@@ -638,6 +645,9 @@ animation: marquee 90s linear infinite;
 .testimonials {
     padding: 120px 0 80px;
 }
+.testimonials .container {
+    max-width: 100%;
+}
 .testimonials .heading-deatils .section-title {
     background: linear-gradient(90deg, #48B206 0%, #0070BD 100%);
 }
@@ -647,12 +657,15 @@ animation: marquee 90s linear infinite;
 .testimonials-slider {
     position: relative;
     width: 100%;
-    max-width: 1500px;
+    max-width: 1800px;
+    margin-left: auto;
+    margin-right: 0;
+    padding-left: 100px;
 }
 .testimonial-card {
     border: 1px solid #394248;
     padding: 52px;
-    min-height: 280px;
+    height: 100%;
 }
 .testimonial-card p {
     color: #ffffff;
@@ -704,6 +717,7 @@ font-family: 'Neue Montreal';
 }
 .testimonials .swiper-slide{
     opacity: 0.5;
+    height: auto;
 }
 .testimonials .swiper-slide.swiper-slide-active {
     opacity: 1;
@@ -715,6 +729,10 @@ font-family: 'Neue Montreal';
 .testimonials .swiper-button-prev:hover,
 .testimonials .swiper-button-next:hover {
     color: var(--secondary-clr);
+}
+
+.testimonials .swiper-button-next {
+    right: 100px;
 }
 /* testimonials end */
 
@@ -874,9 +892,12 @@ font-family: 'Neue Montreal';
     width: 100%;
     left: 0;
     right: 0;
-    max-width: 1500px;
+    max-width: 1450px;
     margin: 0 auto;
     bottom: 20px;
+}
+.projects-featured .linestyle::before {
+    background: var(--theme);
 }
 .pf-head {
     display: flex;
@@ -895,21 +916,24 @@ font-family: 'Neue Montreal';
     font-weight: 500;
 }
 .pf-line {
-    height: 1px;
-    background: #2B3942;
     flex: 1;
     position: relative;
+    height: 2px;
+    background: rgb(255 255 255 / 30%);
 }
+
 .pf-line:after {
-    content: '';
-    width: 6px;
-    height: 6px;
-    border-radius: 999px;
-    background: #2EA9FF;
+    content: "";
+    background: var(--secondary-clr);
     position: absolute;
-    right: -10px;
-    top: -2px;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    top: 0;
+    right: -25px;
+    transform: translateY(-50%);
 }
+
 .pf-card {
     display: grid;
     grid-template-columns: 1.3fr 1fr;
