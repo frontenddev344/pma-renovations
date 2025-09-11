@@ -21,7 +21,8 @@ if (typeof Swiper !== 'undefined') {
                 prevEl: '.testimonials .swiper-button-prev'
             },
             breakpoints: {
-                768: { slidesPerView: 2.5 },
+                575: { slidesPerView: 1 },
+                768: { slidesPerView: 2.2 },
                 1200: { slidesPerView: 2.5 }
             }
         });
@@ -59,14 +60,15 @@ if (typeof Swiper !== 'undefined') {
             spaceBetween: 24,
             loop: true,
             centeredSlides: true,
-            loopAdditionalSlides: 2,
+            loopedSlides: 10, // Ensures enough duplicated slides for infinite loop
             navigation: {
                 nextEl: '.projects-featured .swiper-button-next',
                 prevEl: '.projects-featured .swiper-button-prev'
             },
             breakpoints: {
-                768: { slidesPerView: 1.2 },
-                1200: { slidesPerView: 1.2 }
+                575: { slidesPerView: 1, loopedSlides: 10 },
+                768: { slidesPerView: 1.2, loopedSlides: 10 },
+                1200: { slidesPerView: 1.2, loopedSlides: 10 }
             }
         });
     }

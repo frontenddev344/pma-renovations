@@ -42,7 +42,7 @@ p {
     color: #ffffff;
     text-align: left;
     font-family: 'Neue Montreal';
-    font-size: 24px;
+    font-size: clamp(1.2rem, 2vw, 24px);
     letter-spacing: -0.02em;
     font-weight: 400;
 }
@@ -278,11 +278,11 @@ h6 {
     color: #ffffff;
     text-align: left;
     font-family: 'Neue Montreal';
-    font-size: 64px;
     letter-spacing: -0.02em;
     font-weight: 500;
     position: relative;
     margin: 0 0 32px;
+    font-size: clamp(1.75rem, 4vw, 64px);
 }
 span.highlight {
     color: var(--orange);
@@ -290,8 +290,8 @@ span.highlight {
 .sub-title {
     color: #ffffff;
     text-align: left;
-font-family: 'Neue Montreal';
-    font-size: 24px;
+    font-family: 'Neue Montreal';
+    font-size: clamp(1.2rem, 2vw, 24px);
     letter-spacing: -0.02em;
     font-weight: 400;
 }
@@ -342,10 +342,10 @@ font-family: 'Neue Montreal';
 .site-banner h1 {
     color: #ffffff;
     text-align: left;
-    font-size: 124px;
     line-height: 90%;
     letter-spacing: -0.02em;
     font-weight: 400;
+    font-size: clamp(2.5rem, 6.5vw, 124px);
 }
 .banner-right {
     display: flex;
@@ -484,8 +484,9 @@ font-family: 'Neue Montreal';
 .footer-rating-value {
     color: rgb(255 255 255 / 50%);
     text-align: left;
-font-family: 'Neue Montreal';
+    font-family: 'Neue Montreal';
     font-size: 64px;
+    font-size: clamp(1.5rem, 4vw, 64px);
     letter-spacing: -0.02em;
     font-weight: 400;
     text-transform: uppercase;
@@ -500,6 +501,13 @@ font-family: 'Neue Montreal';
     text-transform: uppercase;
     position: relative;
 }
+.divider {
+    background: rgb(255 255 255 / 15%);
+    width: 2px;
+    height: 80px;
+    margin: 0 20px;
+    flex-shrink: 0;
+}
 .footer-rating-label::after {
     content: "";
     position: absolute;
@@ -508,11 +516,13 @@ font-family: 'Neue Montreal';
     height: 100%;
     top: 0;
     right: 20px;
+    opacity: 0;
 }
 
 .footer-right div[class^="footer-cols"] {
     display: flex;
     justify-content: space-between;
+    gap:15px;
 }
 .footer-right .footer-cols-center {
     margin: 60px 0;
@@ -563,7 +573,7 @@ font-family: 'Neue Montreal';
     color: #ffffff;
     text-align: right;
     font-family: 'Neue Montreal';
-    font-size: 52px;
+    font-size: clamp(1.5rem, 3vw, 52px);
     letter-spacing: -0.02em;
     font-weight: 500;
 }
@@ -607,15 +617,15 @@ animation: marquee 90s linear infinite;
     }
   }
   
-.footer-bottom-text h2 {
+  .footer-bottom-text h2 {
     color: #ffffff;
     text-align: left;
     font-family: 'Neue Montreal';
-    font-size: 124px;
     letter-spacing: -0.02em;
     font-weight: 500;
     opacity: 0.1;
     display: inline-block;
+    font-size: clamp(2.5rem, 8vw, 124px);
 }
 .footer-lang-item {
     color: #ffffff;
@@ -639,6 +649,16 @@ animation: marquee 90s linear infinite;
     letter-spacing: -0.02em;
     font-weight: 500;
     text-transform: uppercase;
+}
+a.footer-email {
+    display: inline-flex;
+    gap: 10px;
+    color: #ffffff;
+    text-align: right;
+    font-family: "NeueMontreal-Medium", sans-serif;
+    font-size: clamp(1.2rem, 2vw, 24px);
+    letter-spacing: -0.02em;
+    font-weight: 500;
 }
 /* footer end  */
 /* testimonials start */
@@ -670,18 +690,16 @@ animation: marquee 90s linear infinite;
 .testimonial-card p {
     color: #ffffff;
     text-align: left;
-font-family: 'Neue Montreal';
-    font-size: 32px;
+    font-family: 'Neue Montreal';
+    font-size: clamp(1.125rem, 2vw, 32px);
     line-height: 130%;
     letter-spacing: -0.02em;
     font-weight: 400;
     margin: 44px 0;
 }
 .testimonial-card .quote-mark {
-    color: var(--theme);
-    font-size: 40px;
-    line-height: 1;
-    margin-bottom: 16px;
+    width: 100%;
+    max-width: 67px;
 }
 .testimonial-card .author {
     display: flex;
@@ -748,6 +766,13 @@ font-family: 'Neue Montreal';
     gap: 40px;
     align-items: center;
     grid-template-columns: 1.5fr 1fr;
+}
+.why-right {
+    height: 100%;
+}
+
+.why-choose .item {
+    height: 100%;
 }
 .why-title {
     color: #ffffff;
@@ -827,8 +852,8 @@ font-family: 'Neue Montreal';
 .feature-card h4 {
     color: #ffffff;
     text-align: left;
-font-family: 'Neue Montreal';
-    font-size: 24px;
+    font-family: 'Neue Montreal';
+    font-size: clamp(1.2rem, 1.8vw, 24px);
     letter-spacing: -0.02em;
     font-weight: 400;
 }
@@ -836,6 +861,11 @@ font-family: 'Neue Montreal';
 .feature-highlight .feature-index {
     color: rgba(255, 255, 255, 0.8);
 }
+.why-image {
+    width: 100%;
+    height: 100%;
+}
+
 .why-image img {
     width: 100%;
     height: 100%;
@@ -879,6 +909,9 @@ font-family: 'Neue Montreal';
 
 .projects-cta {
     margin-top: 64px;
+    width: 100%;
+    max-width: 1440px;
+    margin-left: auto;
 }
 /* projects-gallery end */
 
@@ -903,7 +936,7 @@ font-family: 'Neue Montreal';
     display: flex;
     align-items: center;
     gap: 32px;
-    width: 100%;
+    width: 95%;
     max-width: 1500px;
     margin: 0 auto 32px;
 }
@@ -912,6 +945,7 @@ font-family: 'Neue Montreal';
     text-align: left;
     font-family: 'Neue Montreal';
     font-size: 36px;
+    font-size: clamp(1.25rem, 3vw, 36px);
     letter-spacing: -0.02em;
     font-weight: 500;
 }
@@ -955,7 +989,7 @@ font-family: 'Neue Montreal';
     color: #ffffff;
     text-align: left;
     font-family: 'Neue Montreal';
-    font-size: 32px;
+    font-size: clamp(1.25rem, 2vw, 32px);
     letter-spacing: -0.02em;
     font-weight: 500;
     line-height: 1;
@@ -966,15 +1000,15 @@ font-family: 'Neue Montreal';
 .pf-meta {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 32px;
     justify-content: center;
     align-items: start;
 }
 .pf-name {
     color: #ffffff;
     text-align: left;
-font-family: 'Neue Montreal';
-    font-size: 32px;
+    font-family: 'Neue Montreal';
+    font-size: clamp(1.25rem, 2vw, 32px);
     letter-spacing: -0.02em;
     font-weight: 400;
 }
@@ -982,8 +1016,8 @@ font-family: 'Neue Montreal';
 .pf-info li {
     color: rgb(255 255 255 / 50%);
     text-align: left;
-font-family: 'Neue Montreal';
-    font-size: 24px;
+    font-family: 'Neue Montreal';
+    font-size: clamp(1.2rem, 2vw, 24px);
     letter-spacing: -0.02em;
     font-weight: 400;
     line-height: 1.7;
@@ -1023,7 +1057,7 @@ font-family: 'Neue Montreal';
     color: #ffffff;
     text-align: center;
     font-family: 'Neue Montreal';
-    font-size: 64px;
+    font-size: clamp(1.75rem, 4vw, 64px);
     line-height: 100%;
     letter-spacing: -0.02em;
     font-weight: 500;
@@ -1049,7 +1083,7 @@ font-family: 'Neue Montreal';
     color: #ffffff;
     text-align: left;
     font-family: "NeueMontreal-Light", sans-serif;
-    font-size: 92px;
+    font-size: clamp(2.5rem, 5vw, 92px);
     letter-spacing: -0.02em;
     font-weight: 300;
 }
