@@ -38,7 +38,7 @@
 		max-width: 220px;
 	}
 	.projects-featured .linestyle {
-		width: 95%;
+		width: 75%;
 		left: 20px;
 	}
 }
@@ -215,7 +215,7 @@
 	.why-choose .container {
 		margin: 0 auto;
 	}
-	.why-image {
+	.why-image img {
 		max-height: 550px;
 	}
 	.why-choose.why-choose-reverse .why-grid {
@@ -347,6 +347,9 @@
 	}
 	.footer-logo {
 		max-width: 120px;
+	}
+	.projects-featured .linestyle {
+		width: 90%;
 	}	
 }
 
