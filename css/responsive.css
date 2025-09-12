@@ -138,7 +138,7 @@
 		bottom: 0;
 		width: 100%;
 		max-width: 350px;
-		background: var(--black);
+		background: var(--dark-bg);
 		transition: 0.4s cubic-bezier(0, 0, 0.13, 0.61);
 		transform: translateX(100%);
 		z-index: 99;
@@ -372,6 +372,9 @@
 	}
 	.projects-featured .linestyle {
 		width: calc(100% - 65px);
+	}
+	.site-nav {
+		max-width: 100%;
 	}
 }
 
