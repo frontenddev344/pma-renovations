@@ -370,6 +370,9 @@
 		width: 100%;
 		text-align: center;
 	}
+	.projects-featured .linestyle {
+		width: calc(100% - 65px);
+	}
 }
 
 @media screen and (max-width:480px){

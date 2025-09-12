@@ -134,6 +134,7 @@ h6 {
     background:var(--secondary-clr);
     transition: all 0.2s linear;
     display: inline-block;
+    text-align: center;
     position: relative;
     font-size: 24px;
     font-weight: 500;
