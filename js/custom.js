@@ -29,6 +29,7 @@ if (typeof Swiper !== 'undefined') {
     }
 }
 
+
   
 // Projects Gallery Swiper
 if (typeof Swiper !== 'undefined') {
@@ -50,6 +51,7 @@ if (typeof Swiper !== 'undefined') {
     }
 }
 
+  
   
 // Projects Featured Swiper
 if (typeof Swiper !== 'undefined') {
