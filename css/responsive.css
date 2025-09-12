@@ -387,6 +387,9 @@
 		padding: 0;
 		max-width: calc(100% - 40px);
 	}
+	.footer-top {
+		padding-bottom: 40px;
+	}
 }
 
 @media screen and (max-width:480px){
