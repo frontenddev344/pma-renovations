@@ -376,6 +376,13 @@
 	.site-nav {
 		max-width: 100%;
 	}
+	.banner-right h3 {
+		text-align: center;
+	}
+	.site-banner h1 {
+		text-align: center;
+		margin: 0 auto;
+	}
 }
 
 @media screen and (max-width:480px){
