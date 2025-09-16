@@ -5,6 +5,17 @@ $(document).ready(function(){
         $("body").removeClass("toggle");
       });
     });
+
+    $(".proof-projects-grid").hover(function(){
+        $(this).addClass("active");
+    });
+
+    $('.open-mega-menu').click(function(){
+        $(".mega-menu").fadeIn(300);
+    })
+    $(".mega-closed-menu").click(function(){
+        $(".mega-menu").fadeOut(300);
+    })
   });
 
   
@@ -31,49 +42,60 @@ if (typeof Swiper !== 'undefined') {
 
 
   
-// Projects Gallery Swiper
+// Projects Gallery Swiper (main + thumbs)
 if (typeof Swiper !== 'undefined') {
-    var projectsEl = document.querySelector('.projects-slider');
-    if (projectsEl) {
-        new Swiper(projectsEl, {
-            slidesPerView: 1.2,
-            spaceBetween: 24,
-            loop: true,
+    var pgThumbsEl = document.querySelector('.projects-gallery .pg-thumbs');
+    var pgMainEl = document.querySelector('.projects-gallery .pg-main');
+
+    if (pgThumbsEl && pgMainEl) {
+        // Initialize thumbs swiper
+        var pgThumbsSwiper = new Swiper(pgThumbsEl, {
+            spaceBetween: 30,
+            slidesPerView: 6,
+            freeMode: true,
+            watchSlidesProgress: true,
+            watchSlidesVisibility: true, // important for looped thumbs
+        });
+
+        // Initialize main swiper
+        var pgMainSwiper = new Swiper(pgMainEl, {
+            spaceBetween: 10,
+            slidesPerView: 1,
+            loop: false, // disable loop to fix thumb click issue
             navigation: {
                 nextEl: '.projects-gallery .swiper-button-next',
                 prevEl: '.projects-gallery .swiper-button-prev'
             },
-            breakpoints: {
-                768: { slidesPerView: 2 },
-                1200: { slidesPerView: 2.5 }
+            thumbs: {
+                swiper: pgThumbsSwiper
             }
         });
     }
 }
 
-  
-  
-// Projects Featured Swiper
-if (typeof Swiper !== 'undefined') {
-    var pfEl = document.querySelector('.pf-slider');
-    if (pfEl) {
-        new Swiper(pfEl, {
-            slidesPerView: 1.0,
-            spaceBetween: 24,
-            loop: true,
-            centeredSlides: true,
-            loopedSlides: 10, // Ensures enough duplicated slides for infinite loop
-            navigation: {
-                nextEl: '.projects-featured .swiper-button-next',
-                prevEl: '.projects-featured .swiper-button-prev'
-            },
-            breakpoints: {
-                575: { slidesPerView: 1, loopedSlides: 10 },
-                768: { slidesPerView: 1.2, loopedSlides: 10 },
-                1200: { slidesPerView: 1.2, loopedSlides: 10 }
-            }
-        });
-    }
-}
+
 
   
+
+
+var projectCardSliderEl = document.querySelector(".project-card-slider");
+if (projectCardSliderEl && typeof Swiper !== 'undefined') {
+    var projectCardSlider = new Swiper(projectCardSliderEl, {
+        spaceBetween: 30,
+        centeredSlides: true,
+        loop: true,
+        // autoplay: {
+        //     delay: 2500,
+        //     disableOnInteraction: false,
+        // },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+}
+

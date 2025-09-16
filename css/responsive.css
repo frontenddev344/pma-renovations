@@ -80,9 +80,7 @@
 		border: 32px solid var(--theme);
 		padding: 28px;
 	}
-	.the-proof .why-grid {
-		grid-template-columns: 1fr 1fr;
-	}
+	/* the-proof removed */
 	.feature-card .count {
 		margin: 34px 0;
 	}
@@ -116,10 +114,7 @@
 	.footer-rating-box {
 		max-width: 200px;
 	}
-	.the-proof .pf-line {
-		margin-right: 0;
-		
-	}
+	/* the-proof removed */
 	
 }
 @media screen and (max-width:1200px) {
@@ -231,9 +226,7 @@
 		border: 22px solid var(--theme);
 		padding: 24px;
 	}
-	.the-proof .why-grid {
-		grid-template-columns: 100%;
-	}
+	/* the-proof removed */
 	.testimonial-card .quote-mark {
 		max-width: 45px;
 	}
@@ -254,11 +247,7 @@
 	.pf-meta {
 		gap: 22px;
 	}
-	.the-proof .pf-line {
-		margin-right: 0;
-		width: 98%;
-		margin-left: 20px;
-	}
+	/* the-proof removed */
 	.projects-gallery {
 		padding: 30px 0 30px;
 	}
