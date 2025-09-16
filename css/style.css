@@ -938,7 +938,7 @@ a.footer-email {
     overflow: hidden;
 }
 .bigger-text {
-    font-size: 179.04px;
+    font-size: clamp(80px, 13vw, 180px);
     line-height: 100%;
     letter-spacing: -0.02em;
     font-weight: 500;
@@ -947,8 +947,8 @@ a.footer-email {
 }
 .why-choose-top h4 {
     font-weight: 400;
-    font-size: 44px;
     line-height: 100%;
+    font-size: clamp(24px, 3vw, 44px);
 }
 .why-choose-top h4 a {
     color: #55A4DA;
@@ -976,7 +976,7 @@ a.footer-email {
     padding: 52px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content:center;
     transition: all 0.3s linear;
 }
 
@@ -988,7 +988,6 @@ a.footer-email {
     margin: 48px 0;
 }
 .feature-card span {
-    margin-bottom: 12px;
     color: #46b4ff;
     text-align: left;
     font-family: 'Neue Montreal';
@@ -1001,7 +1000,7 @@ a.footer-email {
     color: #fff;
 }
 .feature-icon {
-    margin: 48px 0;
+    margin: 14px 0;
     width: 72px;
     height: 72px;
     display: flex;
@@ -1167,7 +1166,7 @@ a.footer-email {
     transition: all 0.3s ease-in-out;
 }
 .reinvent-grid .feature-card h4 {
-    font-size: 44px;
+    font-size: clamp(24px, 3vw, 44px);
 }
 .reinvent-card-row:hover .reinvent-card-img img {
     transform: scale(1.2);
