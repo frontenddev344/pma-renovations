@@ -55,6 +55,13 @@ if (typeof Swiper !== 'undefined') {
             freeMode: true,
             watchSlidesProgress: true,
             watchSlidesVisibility: true, // important for looped thumbs
+            breakpoints: {
+                300: { slidesPerView: 1 },
+                575: { slidesPerView: 2 },
+                768: { slidesPerView: 3 },
+                991: { slidesPerView: 4 },
+                1200: { slidesPerView: 6 }
+            }
         });
 
         // Initialize main swiper

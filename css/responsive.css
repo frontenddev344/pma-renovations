@@ -1,7 +1,7 @@
 
 @media screen and (max-width:1600px){
 	.site-header .container {
-		padding: 35px 0;
+		padding: 35px 20px;
 	}
 	.site-logo img {
 		max-width: 120px;
@@ -129,6 +129,7 @@
 		transform: translateX(100%);
 		z-index: 99;
 		margin-left: auto;
+		display: none;
 	}
 
 	.site-nav ul {
@@ -189,9 +190,6 @@
 	.banner-right {
 		margin-left: 0;
 	}
-	.site-banner h1 {
-		max-width: 60%;
-	}
 	.banner-right h3 {
 		font-size: 24px;
 	}
@@ -243,7 +241,6 @@
 
 @media screen and (max-width:991px){
 	.site-banner h1 {
-		max-width: 400px;
 		line-height: normal;
 	}
 	.footer-top .grid {
@@ -279,6 +276,9 @@
 	}
 	.behind-the-scenes .content-box h2 {
 		line-height: normal;
+	}
+	.the-proof-layout .grid {
+		grid-template-columns: 100%;
 	}
 }
 
@@ -362,6 +362,12 @@
 	}
 	.footer-top {
 		padding-bottom: 40px;
+	}
+	.reinvent-card-row {
+		grid-template-columns: 100%;
+	}
+	.reinvent-card-row:nth-child(even) .reinvent-card-img {
+		grid-area: auto;
 	}
 }
 

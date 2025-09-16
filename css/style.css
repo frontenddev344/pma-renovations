@@ -313,6 +313,9 @@ span.highlight {
 .closed-menu{
     display: none;
 }
+.site-header .open-mega-menu {
+    position: static;
+}
 /*header end*/ 
 /* mega menu start  */
 .mega-menu {
@@ -397,8 +400,15 @@ a.mega-mail {
 .mega-menu a.social-link {
     background: #f2f3f4;
 }
+.mega-menu a.social-link:hover {
+    background: var(--theme);
+}
 .mega-menu a.social-link svg path {
     fill: #001625;
+    transition: all 0.2s linear;
+}
+.mega-menu a.social-link:hover svg path {
+    fill: #fff;
 }
 .mega-menu .site-logo a img {
     max-width: 120px;
@@ -440,7 +450,7 @@ a.mega-mail {
     position: fixed;
     top: 50%;
     right: 0;
-    z-index: 9;
+    z-index: 99;
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -724,7 +734,7 @@ address.footer-address p {
     color: #fff;
     text-align: left;
     font-family: 'Neue Montreal';
-    font-size: 52px;
+    font-size: clamp(24px, 3vw, 52px);
     letter-spacing: -0.02em;
     font-weight: 400;
     text-transform: capitalize;
@@ -1309,6 +1319,10 @@ font-size: 32px;
     margin-bottom: 84px;
 }
 
+.image-box img {
+    width: 100%;
+    object-fit: cover;
+}
 .proof-projects-grid {
     display: grid;
     grid-template-columns: 2fr 1fr;
