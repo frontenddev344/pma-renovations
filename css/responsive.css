@@ -1,8 +1,5 @@
 
 @media screen and (max-width:1600px){
-	.container {
-		max-width: calc(100% - 64px);
-	}
 	.site-header .container {
 		padding: 35px 0;
 	}
@@ -47,7 +44,7 @@
 		height: 950px;
 	}
 	.site-header .container {
-		padding: 20px 0;
+		padding: 20px 20px;
 	}
 	.site-nav li.email, .site-nav li.phone {
 		margin-left: 10px;
@@ -76,10 +73,7 @@
 		width: 52px;
 		height: 52px;
 	}
-	.behind-the-scenes .content-box {
-		border: 32px solid var(--theme);
-		padding: 28px;
-	}
+	
 	/* the-proof removed */
 	.feature-card .count {
 		margin: 34px 0;
@@ -118,9 +112,6 @@
 	
 }
 @media screen and (max-width:1200px) {
-	.container {
-		max-width: calc(100% - 40px);
-	}
 	.site-header .container{
 		display: flex;
 	}
@@ -222,10 +213,7 @@
 	.features-grid {
 		grid-template-columns: repeat(auto-fill, minmax(min(280px, 100%), 1fr)) !important;
 	}
-	.behind-the-scenes .content-box {
-		border: 22px solid var(--theme);
-		padding: 24px;
-	}
+	
 	/* the-proof removed */
 	.testimonial-card .quote-mark {
 		max-width: 45px;
@@ -279,11 +267,7 @@
 	.pf-meta {
 		gap: 15px;
 	}
-	.behind-the-scenes .content-box {
-		border: 15px solid var(--theme);
-		padding: 15px;
-		width: 90%;
-	}
+	
 	.testimonials {
 		padding: 80px 0 80px;
 	}
