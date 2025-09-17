@@ -448,6 +448,12 @@
 	.mega-menu-open-container {
 		top: 30px;
 	}
+	.section-title br {
+		display: none;
+	}
+	.sub-title br {
+		display: none;
+	}
 }
 
 @media screen and (max-width:575px){
@@ -516,12 +522,7 @@
 		text-align: center;
 		line-height: normal;
 	}
-	.section-title br {
-		display: none;
-	}
-	.sub-title br {
-		display: none;
-	}
+	
 	.intro-links  ul {
 		grid-template-columns: 100%;
 	}
