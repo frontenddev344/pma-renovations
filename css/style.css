@@ -378,6 +378,10 @@ span.highlight {
 .intro-links a {
     color: #001625;
     font-size: clamp(1.4rem, 3vw, 52px);
+    transition: all 0.2s linear;
+}
+.intro-links a:hover {
+    color: var(--theme);
 }
 .intro-bottom {
     align-items: center;
@@ -391,18 +395,39 @@ a.mega-mail {
     display: inline-flex;
     align-items: center;
     gap: 12px;
+    transition: all 0.2s linear;
 }
-.intro-address { color: #001625; font-size: 18px; }
+a.mega-mail:hover{
+    color: var(--theme);
+}
+a.mega-mail svg path {
+    transition: all 0.2s linear;
+}
+a.mega-mail:hover svg path {
+    stroke: var(--theme);
+}
+.intro-address {
+    color: #001625;
+    font-size: 18px; 
+}
 .intro-phone {
- color: #001625; 
- font-size: clamp(1.5rem, 3vw, 52px); 
- font-weight: 500;
+    color: #001625; 
+    font-size: clamp(1.5rem, 3vw, 52px); 
+    font-weight: 500;
+    transition: all 0.2s linear;
+}
+.intro-phone:hover {
+    color: var(--theme);
 }
 .intro-email {
     color: #001625;
     font-size: 18px;
     display: inline-block;
     margin-bottom: 12px; 
+    transition: all 0.2s linear;
+}
+.intro-email:hover {
+    color: var(--theme);
 }
 .mega-menu a.social-link {
     background: #f2f3f4;
@@ -717,6 +742,11 @@ address.footer-address p {
     letter-spacing: -0.02em;
     font-weight: 400;
     display: block;
+    transition: all 0.2s linear;
+}
+
+.footer-phone:hover {
+    color: var(--theme);
 }
 
 .footer-nav li a {
@@ -782,7 +812,7 @@ address.footer-address p {
     font-weight: 500;
     text-transform: uppercase;
 }
-a.footer-email {
+.footer-email {
     color: #ffffff;
     text-align: left;
     font-family: "NeueMontreal-Medium", sans-serif;
@@ -790,6 +820,10 @@ a.footer-email {
     letter-spacing: -0.02em;
     font-weight: 500;
     display: block;
+    transition: all 0.2s linear;
+}
+.footer-email:hover{
+    color: var(--theme);
 }
 
 .iqsay_logo {
