@@ -532,6 +532,9 @@
 	.pg-thumbs img {
 		height: 80px;
 	}
+	.contact-fixed-bar a svg {
+		max-width: 20px;
+	}
 }
 
 @media screen and (max-width:480px){
