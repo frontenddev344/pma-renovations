@@ -367,6 +367,9 @@
 		padding-bottom: 32px;
 		margin-bottom: 32px;
 	}
+	.privacy-policy {
+		margin-top: 24px;
+	}
 }
 
 @media screen and (max-width:768px){

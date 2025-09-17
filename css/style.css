@@ -736,7 +736,7 @@ address.footer-address p {
 .footer-phone {
     color: #ffffff;
     font-family: 'Neue Montreal';
-    font-size: clamp(1.5rem, 2vw, 32px);
+    font-size: clamp(1.3rem, 2vw, 32px);
     letter-spacing: -0.02em;
     font-weight: 400;
     display: block;
