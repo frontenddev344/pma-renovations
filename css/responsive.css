@@ -110,7 +110,9 @@
 	.footer-rating-box {
 		max-width: 200px;
 	}
-	/* the-proof removed */
+	.behind-the-scenes {
+		margin: 20px;
+	}
 	
 }
 @media screen and (max-width:1200px) {
@@ -235,10 +237,7 @@
 	.pf-meta {
 		gap: 22px;
 	}
-	/* the-proof removed */
-	.projects-gallery {
-		padding: 30px 0 30px;
-	}
+	
 	.pg-head {
 		top: 40px;
 	}
@@ -273,6 +272,9 @@
 	.contact-fixed-bar a span {
 		font-size: 18px;
 	}
+	.intro-links  ul {
+		gap: 20px;
+	}
 }
 
 @media screen and (max-width:991px){
@@ -293,9 +295,6 @@
 	}
 	.site-banner {
 		height: 750px;
-	}
-	.banner-wrap {
-		padding-top: 200px;
 	}
 	.pf-meta {
 		gap: 15px;
@@ -337,6 +336,37 @@
 	.pg-thumbs img {
 		height: 120px;
 	}
+	.project-card {
+		height: 500px;
+	}
+	.content-box {
+		padding: 32px 0 0;
+	}
+	.image-box img {
+		max-height: 500px;
+	}
+	.content-box h4 {
+		margin: 0 0 20px;
+	}
+	.section-title {
+		margin: 0 0 20px;
+	}
+	.proof-projects-card-content {
+		padding: 34px;
+	}
+	.the-proof-layout {
+		margin-bottom: 44px;
+	}
+	.heading-deatils {
+		margin: 0 auto 32px;
+	}
+	.pg-thumbs {
+		padding: 0 20px;
+	}
+	.why-choose-top {
+		padding-bottom: 32px;
+		margin-bottom: 32px;
+	}
 }
 
 @media screen and (max-width:768px){
@@ -358,10 +388,6 @@
 		width: 90%;
 		position: static;
 		transform: translate(0, 0);
-		margin: 20px auto;
-	}
-	.behind-the-scenes {
-		padding-bottom: 20px;
 	}
 	.testimonials {
 		padding: 40px 0 40px;
@@ -374,7 +400,42 @@
 	}
 	.projects-featured .linestyle {
 		width: 90%;
-	}	
+	}
+	.details-project-card p {
+		margin: 12px 0  0;
+	}
+	.reinvent {
+		padding: 40px 0;
+	}
+	.feature-card {
+		padding: 20px;
+	}
+	.open-mega-menu {
+		width: 50px;
+		height: 50px;
+	}
+	.contact-fixed-bar a {
+		width: 50px;
+		height: 50px;
+	}
+	.mega-closed-menu {
+		width: 50px;
+		height: 50px;
+	}
+	.why-choose {
+		padding: 0 0 40px;
+	}
+	.pg-head h6 {
+		font-size: 20px;
+	}
+	
+	.intro-right .footer-social {
+		margin: 0;
+	}
+	.mega-menu .grid {
+		grid-template-columns: 100%;
+		gap: 24px;
+	}
 }
 
 @media screen and (max-width:575px){
@@ -420,10 +481,43 @@
 	.reinvent-card-row:nth-child(even) .reinvent-card-img {
 		grid-area: auto;
 	}
+	.proof-projects-grid {
+		grid-template-columns: 100%;
+	}
+	.proof-projects-card-img img {
+		width: 100%;
+	}
+	.proof-projects-card-content {
+		padding: 24px;
+	}
+	.project-card {
+		height: 400px;
+	}
+	.site-banner {
+		height: 550px;
+	}
+	.btns_group a {
+		width: 100%;
+		text-align: center;
+	}
+	.why-choose-top h4 {
+		text-align: center;
+		line-height: normal;
+	}
+	.section-title br {
+		display: none;
+	}
+	.sub-title br {
+		display: none;
+	}
+	.intro-links  ul {
+		grid-template-columns: 100%;
+	}
+	.intro-bottom {
+		flex-direction: column;
+		align-items: start;
+	}
 }
 
 @media screen and (max-width:480px){
-	.site-banner {
-		height: 800px;
-	}
 }

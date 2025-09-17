@@ -56,9 +56,17 @@ if (typeof Swiper !== 'undefined') {
             watchSlidesProgress: true,
             watchSlidesVisibility: true, // important for looped thumbs
             breakpoints: {
-                300: { slidesPerView: 1 },
-                575: { slidesPerView: 2 },
-                768: { slidesPerView: 3 },
+                300: { slidesPerView: 2 ,
+                    spaceBetween: 15,
+                },
+                575: { 
+                    slidesPerView: 2 ,
+                    spaceBetween: 20,
+                },
+                768: { 
+                    slidesPerView: 3 ,
+                    spaceBetween: 20,
+                },
                 991: { slidesPerView: 4 },
                 1200: { slidesPerView: 6 }
             }
@@ -68,7 +76,7 @@ if (typeof Swiper !== 'undefined') {
         var pgMainSwiper = new Swiper(pgMainEl, {
             spaceBetween: 10,
             slidesPerView: 1,
-            loop: false, // disable loop to fix thumb click issue
+            loop: false,
             navigation: {
                 nextEl: '.projects-gallery .swiper-button-next',
                 prevEl: '.projects-gallery .swiper-button-prev'
