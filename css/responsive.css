@@ -436,6 +436,9 @@
 		grid-template-columns: 100%;
 		gap: 24px;
 	}
+	.contact-fixed-bar a:hover span {
+		transform: translate(-40px, -50%);
+	}
 }
 
 @media screen and (max-width:575px){
