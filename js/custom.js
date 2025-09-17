@@ -16,6 +16,12 @@ $(document).ready(function(){
     $(".mega-closed-menu").click(function(){
         $(".mega-menu").fadeOut(300);
     })
+    $(".feature-project").hover(function(){
+        $(this).addClass("zoom-out");
+    });
+    $(".projects-gallery").hover(function(){
+        $(this).addClass("zoom-out");
+    });
   });
 
   
