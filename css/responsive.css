@@ -291,6 +291,10 @@
 		padding: 14px 16px;
 		font-size: 20px;
 	}
+	.form-group span {
+		padding: 0 16px;
+		font-size: 20px;
+	}
 	.contact-info li {
 		padding: 24px;
 	}
@@ -507,6 +511,9 @@
 		margin-bottom: 8px;
 	}
 	.form_control {
+		font-size: 18px;
+	}
+	.form-group span {
 		font-size: 18px;
 	}
 	.contact-section .scroll-wrapper {

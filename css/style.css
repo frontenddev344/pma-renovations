@@ -1446,11 +1446,34 @@ a.footer-email {
     font-family: 'Neue Montreal';
     overflow: hidden;
 }
+.form_control::placeholder {
+    color: rgb(255 255 255 / 50%);
+}
 .form_control:focus-visible, .form_control:focus {
     outline: none;
 }
-.form_control:not(:last-child) {
+.form-group {
+    position: relative;
+}
+.form-group span {
+    color: rgb(255 255 255 / 50%);
+    font-size: 24px;
+    letter-spacing: -0.02em;
+    font-weight: 400;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 24px;
+}
+.form-group:not(:last-child) {
     margin-bottom: 16px;
+}
+.form_control:focus-visible + span {
+    opacity: 0;
+}
+.form_control:not(:placeholder-shown) + span {
+    opacity: 0;
 }
 .contact-form .primary-btn {
     width: 100%;
