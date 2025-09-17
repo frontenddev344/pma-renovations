@@ -326,10 +326,18 @@ span.highlight {
     z-index: 99;
     display: none;
 }
-.open-mega-menu {
+.mega-menu-open-container {
     position: fixed;
-    right: 206px;
+    width: 100%;
     top: 40px;
+    left: 0;
+    right: 0;
+    max-width: 1528px;
+    margin: 0 auto;
+    padding: 0 20px;
+    z-index: 9;
+}
+.open-mega-menu {
     cursor: pointer;
     width: 80px;
     height: 80px;
@@ -339,8 +347,8 @@ span.highlight {
     justify-content: center;
     align-items: center;
     transition: all .2s linear;
-    z-index: 9;
     backdrop-filter: blur(10px);
+    margin-left: auto;
 }
 .open-mega-menu:hover {
     background: #fff;
@@ -465,6 +473,7 @@ a.mega-mail {
     align-items: center;
     transition: all .3s linear;
     position: relative;
+    cursor: pointer;
 }
 .contact-fixed-bar a span {
     font-size: 24px;
@@ -691,7 +700,7 @@ a.mega-mail {
     text-transform: uppercase;
 }
 address.footer-address p {
-    font-size: 32px;
+    font-size: clamp(18px, 3vw, 32px);
     margin: 0;
 }
 .footer-social {
@@ -988,6 +997,7 @@ a.footer-email {
     flex-direction: column;
     justify-content:center;
     transition: all 0.3s linear;
+    min-height: 230px;
 }
 
 .feature-card:hover {
@@ -1015,6 +1025,9 @@ a.footer-email {
     height: 72px;
     display: flex;
     align-items: center;
+}
+.feature-icon svg {
+    height: 100%;
 }
 .feature-icon svg path {
     transition: all 0.3s linear;
@@ -1247,7 +1260,7 @@ a.footer-email {
 /* behind-the-scenes start  */
 .behind-the-scenes {
     position: relative;
-    padding: 44px;
+    margin: 44px;
 }
 
 .behind-the-scenes img {
@@ -1286,9 +1299,6 @@ a.footer-email {
 
 .behind-the-scenes .content-box p {
     text-align: center;
-}
-.behind-the-scenes .overlay{
-    inset: 40px;
 }
 /* behind-the-scenes end  */
 /* the-proof start */

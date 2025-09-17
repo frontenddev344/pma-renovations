@@ -89,12 +89,11 @@ var projectCardSliderEl = document.querySelector(".project-card-slider");
 if (projectCardSliderEl && typeof Swiper !== 'undefined') {
     var projectCardSlider = new Swiper(projectCardSliderEl, {
         spaceBetween: 30,
-        centeredSlides: true,
         loop: true,
-        // autoplay: {
-        //     delay: 2500,
-        //     disableOnInteraction: false,
-        // },
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
         pagination: {
             el: ".swiper-pagination",
             clickable: true,
