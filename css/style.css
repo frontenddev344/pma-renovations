@@ -464,6 +464,7 @@ a.mega-mail {
     flex-direction: column;
     gap: 12px;
     align-items: end;
+    transform: translateY(-50%);
 }
 .contact-fixed-bar a {
     width: 80px;
