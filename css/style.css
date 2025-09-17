@@ -1380,8 +1380,7 @@ a.footer-email {
     width: 100%;
 }
 .proof-projects-card-content h3 {
-    font-size: 124px;
-    font-size: clamp(60px, 9vw, 124px);
+    font-size: clamp(50px, 9vw, 124px);
     letter-spacing: -0.02em;
     font-weight: 300;
     color: #fff;
