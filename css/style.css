@@ -1004,7 +1004,7 @@ a.footer-email {
 }
 
 .feature-card:hover {
-    background: var(--secondary-clr);
+    background: #fff;
     border-color: transparent;
 }
 .feature-icon {
@@ -1020,7 +1020,7 @@ a.footer-email {
     transition: all 0.3s linear;
 }
 .feature-card:hover span {
-    color: #fff;
+    color: var(--black);
 }
 .feature-icon {
     margin: 14px 0;
@@ -1035,9 +1035,9 @@ a.footer-email {
 .feature-icon svg path {
     transition: all 0.3s linear;
 }
-.feature-card:hover .feature-icon svg path {
+/* .feature-card:hover .feature-icon svg path {
     stroke: #fff;
-}
+} */
 .feature-icon img {
     width: 36px;
     height: 36px;
@@ -1046,11 +1046,15 @@ a.footer-email {
     color: #ffffff;
     text-align: left;
     font-family: 'Neue Montreal';
-    font-size: clamp(1.2rem, 1.8vw, 24px);
+    font-size: clamp(20px, 3vw, 32px);
     letter-spacing: -0.02em;
     font-weight: 400;
+    transition: all 0.3s linear;
 }
 
+.feature-card:hover h4 {
+    color: var(--black);
+}
 .feature-highlight .feature-index {
     color: rgba(255, 255, 255, 0.8);
 }
