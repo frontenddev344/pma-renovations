@@ -9,7 +9,7 @@
 :root {
    
     --black:#001625;
-    --dark-bg:#152028;
+    --dark-bg:#001625;
     --theme:#48B206;
     --secondary-clr:#0070BD;
     
@@ -136,9 +136,7 @@ h6 {
 }
 
 #main {
-    border-width: 0 1px;
     position: relative;
-    margin: 0 auto;
 }
 
 
@@ -155,6 +153,7 @@ h6 {
     font-size: 24px;
     font-weight: 500;
     letter-spacing: -0.02em;
+    border: 0;
     overflow: hidden;
 }
 .primary-btn:hover {
@@ -163,7 +162,6 @@ h6 {
 
 .primary-btn span {
     position: relative;
-    padding-bottom: 2px;
     
 }
 
@@ -594,27 +592,6 @@ a.mega-mail {
 
 /* site banner end  */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* site footer start  */
 .site-footer {
     color: #fff;
@@ -636,7 +613,6 @@ a.mega-mail {
 }
 .footer-top .grid {
     gap: 20px;
-    padding-top: 20px;
 }
 .footer-right {
     padding-left: 40px;
@@ -962,7 +938,7 @@ a.footer-email {
 }
 .bigger-text {
     font-size: clamp(80px, 13vw, 180px);
-    line-height: 100%;
+    line-height: 1;
     letter-spacing: -0.02em;
     font-weight: 500;
     opacity: 0.1;
@@ -1412,3 +1388,110 @@ a.footer-email {
     font-size: clamp(24px, 3vw, 44px);
     margin: 0;
 }
+
+/* homage page end here  */
+.secondary-header #main{
+    padding-top: 200px;
+}
+.secondary-header .site-header{
+    background: var(--dark-bg);
+}
+.line-dot-style {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 52px 0;
+}
+.line-dot-style .dot {
+    background: #55a4da;
+    border-radius: 50%;
+    flex-shrink: 0;
+    width: 10px;
+    height: 10px;
+}
+.line-dot-style .line {
+    background: #394248;
+    height: 1px;
+    flex-grow: 1;
+}
+.line-dot-style h4 {
+    font-size: 24px;
+}
+/* contact page start  */
+.contact-section {
+    padding: 0 0 120px;
+}
+.contact-section .scroll-wrapper {
+    margin-bottom: -90px;
+    margin-top: -20px;
+}
+.contact-section .section-title {
+    font-size: clamp(30px, 6vw, 104px);
+    line-height: 90%;
+    margin-bottom: 64px;
+}
+.form_control {
+    display: block;
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 24px;
+    background: transparent;
+    height: 77px;
+    resize: none;
+    color:#fff;
+    text-align: left;
+    font-size: 24px;
+    letter-spacing: -0.02em;
+    font-weight: 400;
+    font-family: 'Neue Montreal';
+    overflow: hidden;
+}
+.form_control:focus-visible, .form_control:focus {
+    outline: none;
+}
+.form_control:not(:last-child) {
+    margin-bottom: 16px;
+}
+.contact-form .primary-btn {
+    width: 100%;
+    margin-top: 32px;
+}
+.contact-wrap {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+}
+
+.contact-form {
+    width: 100%;
+}
+.contact-info {
+    width: 100%;
+}
+.contact-info ul {
+    display: grid;
+    gap: 12px;
+}
+.contact-info li {
+    background: #fff;
+    padding: 32px;
+}
+
+.contact-info li h5 {
+    color: rgb(0 22 37 / 50%);
+    text-align: left;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-bottom: 16px;
+}
+
+.contact-info li p {
+    color: #001625;
+    font-size: clamp(20px, 3vw, 32px);
+    letter-spacing: -0.02em;
+    font-weight: 500;
+    margin: 0;
+}
+/* contact page end  */
