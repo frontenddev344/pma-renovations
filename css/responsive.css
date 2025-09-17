@@ -275,6 +275,9 @@
 	.intro-links  ul {
 		gap: 20px;
 	}
+	.mega-menu-open-container {
+		top: 25px;
+	}
 }
 
 @media screen and (max-width:991px){
@@ -442,6 +445,9 @@
 	.contact-fixed-bar a:hover span {
 		transform: translate(-40px, -50%);
 	}
+	.mega-menu-open-container {
+		top: 30px;
+	}
 }
 
 @media screen and (max-width:575px){
@@ -522,6 +528,9 @@
 	.intro-bottom {
 		flex-direction: column;
 		align-items: start;
+	}
+	.pg-thumbs img {
+		height: 80px;
 	}
 }
 
