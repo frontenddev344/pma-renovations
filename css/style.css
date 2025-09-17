@@ -279,7 +279,9 @@ span.highlight {
 .site-nav li a:hover {
     color: var(--secondary-clr);
 }
-  
+.site-nav li a.active {
+    color: var(--secondary-clr);
+}
 .closed-menu a {
     width: 40px;
     aspect-ratio: 1;
@@ -381,6 +383,9 @@ span.highlight {
     transition: all 0.2s linear;
 }
 .intro-links a:hover {
+    color: var(--theme);
+}
+.intro-links a.active {
     color: var(--theme);
 }
 .intro-bottom {
