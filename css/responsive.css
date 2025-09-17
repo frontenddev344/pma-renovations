@@ -522,6 +522,9 @@
 		text-align: center;
 		line-height: normal;
 	}
+	.why-choose-top h4 br {
+		display: none;
+	}
 	
 	.intro-links  ul {
 		grid-template-columns: 100%;
