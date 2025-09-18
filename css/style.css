@@ -219,7 +219,7 @@ h6 {
     font-weight: 500;
     position: relative;
     margin: 0 0 32px;
-    font-size: clamp(1.75rem, 4vw, 64px);
+    font-size: clamp(1.75rem, 4vw, 84px);
 }
 span.highlight {
     color: var(--orange);
@@ -228,7 +228,7 @@ span.highlight {
     color: #ffffff;
     text-align: left;
     font-family: 'Neue Montreal';
-    font-size: clamp(1.2rem, 3vw, 24px);
+    font-size: clamp(1.2rem, 3vw, 32px);
     letter-spacing: -0.02em;
     font-weight: 400;
 }
