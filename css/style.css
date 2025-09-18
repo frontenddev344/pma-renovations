@@ -328,6 +328,9 @@ span.highlight {
 }
 .mega-menu-open-container {
     position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 100%;
     top: 40px;
     left: 0;
@@ -336,6 +339,9 @@ span.highlight {
     margin: 0 auto;
     padding: 0 20px;
     z-index: 9;
+}
+.mega-menu-open-container .site-logo img {
+    max-width: 120px;
 }
 .open-mega-menu {
     cursor: pointer;
@@ -1508,9 +1514,7 @@ address.footer-address p {
 .form-group:not(:last-child) {
     margin-bottom: 16px;
 }
-.form_control:focus-visible + span {
-    opacity: 0;
-}
+
 .form_control:not(:placeholder-shown) + span {
     opacity: 0;
 }
@@ -1557,3 +1561,80 @@ address.footer-address p {
     margin: 0;
 }
 /* contact page end  */
+
+/* gallery page start  */
+.gallery-sec {
+    padding: 64px 0 64px;
+}
+.gallery-sec .section-title {
+    font-size: clamp(30px, 6vw, 104px);
+    line-height: 90%;
+    margin-bottom: 124px;
+}
+.gallery-grid .grid {
+    gap: 32px;
+}
+.gallery-img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.gallery-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: all 0.3s linear;
+}
+.gallery-content-top {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: space-between;
+    margin-top: 24px;
+}
+.gallery-content-top h4 {
+    color: rgb(255 255 255 / 50%);
+    font-size: 24px;
+    letter-spacing: -0.02em;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+}
+.gallery-content-top span {
+    color: #55a4da;
+    font-size: 24px;
+    letter-spacing: -0.02em;
+    font-weight: 400;
+    transition: all 0.2s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+}
+.gallery-content p {
+    color: rgb(255 255 255 / 50%);
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    font-weight: 400;
+    transition: all 0.2s ease-in-out;
+    transform: translateY(-30px);
+    opacity: 0;
+    visibility: hidden;
+
+}
+
+.gallery-card:hover .gallery-img img {
+    transform: scale(1.1);
+}
+.gallery-card:hover .gallery-content-top h4 {
+    color:#fff;
+}
+.gallery-card:hover .gallery-content-top span {
+    opacity: 1;
+    visibility: visible;
+}
+.gallery-card:hover .gallery-content p {
+    transform: translateY(0);
+    opacity: 1;
+    visibility:visible;
+}
+/* gallery page end  */
