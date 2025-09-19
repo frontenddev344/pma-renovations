@@ -1145,7 +1145,7 @@ address.footer-address p {
     position: absolute;
     left: 0;
     right: 0;
-    top: 120px;
+    top: 90px;
     z-index: 9;
     mix-blend-mode: overlay;
 }
