@@ -10,8 +10,8 @@
    
     --black:#001625;
     --dark-bg:#001625;
-    --theme:#48B206;
-    --secondary-clr:#0070BD;
+    --theme:#73BF43;
+    --secondary-clr:#55A4DA;
     
 }
 body {
@@ -435,6 +435,7 @@ a.mega-mail:hover svg path {
     color: #001625;
     font-size: clamp(1.2rem, 2.5vw, 24px); 
     font-weight: 500;
+    line-height: normal;
 }
 .intro-phone {
     color: #001625; 
@@ -999,10 +1000,10 @@ address.footer-address p {
 }
 .scroll-wrapper {
     overflow: hidden;
+    margin-top: -35px;
 }
 .bigger-text {
     font-size: clamp(80px, 13vw, 180px);
-    line-height: 1;
     letter-spacing: -0.02em;
     font-weight: 500;
     opacity: 0.1;
