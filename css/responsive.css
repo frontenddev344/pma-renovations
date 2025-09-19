@@ -129,6 +129,13 @@
 	.gallery-sec .section-title {
 		margin-bottom: 84px;
 	}
+	.intro-bottom {
+		column-gap: 24px;
+		justify-content: space-between;
+	}
+	.intro-bottom {
+		margin-top: 124px;
+	}
 	
 }
 @media screen and (max-width:1200px) {

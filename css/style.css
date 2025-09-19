@@ -276,9 +276,18 @@ h6 {
     font-size: 24px;
     letter-spacing: -0.02em;
     font-weight: 400;
+    overflow: hidden;
 }
-.site-nav li a:hover {
+/* .site-nav li a:hover {
     color: var(--secondary-clr);
+} */
+
+span.text.bottom {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 0;
+    left: 0;
 }
 .site-nav li a.active {
     color: var(--secondary-clr);
@@ -594,7 +603,7 @@ a.mega-mail:hover svg path {
     text-align: center;
     line-height: 90%;
     letter-spacing: -0.02em;
-    font-weight: 400;
+    font-weight: 500;
     font-size: clamp(2.5rem, 6.5vw, 104px);
     text-transform: uppercase;
 }

@@ -119,3 +119,44 @@ if (projectCardSliderEl && typeof Swiper !== 'undefined') {
     });
 }
 
+
+document.addEventListener('DOMContentLoaded', () => {
+    if (window.gsap && window.SplitType) {
+
+        const menuLinks = document.querySelectorAll('.menu-link');
+
+        menuLinks.forEach(link => {
+            const topText = link.querySelector('.top');
+            const bottomText = link.querySelector('.bottom');
+
+            // Split both texts into characters
+            const splitTop = new SplitType(topText, { types: 'chars' });
+            const splitBottom = new SplitType(bottomText, { types: 'chars' });
+
+            const topChars = topText.querySelectorAll('.char');
+            const bottomChars = bottomText.querySelectorAll('.char');
+
+            // Initial positions
+            gsap.set(topChars, { yPercent: 0, rotationX: 0, perspective: 400 });
+            gsap.set(bottomChars, { yPercent: 100, rotationX: -60, perspective: 400 });
+
+            // Hover animation
+            link.addEventListener('mouseenter', () => {
+                // Animate top chars up
+                gsap.to(topChars, { yPercent: -100, rotationX: -90, duration: 0.5, stagger: 0.02, ease: "power3.out" });
+
+                // Animate bottom chars up
+                gsap.to(bottomChars, { yPercent: 0, rotationX: 0, duration: 0.5, stagger: 0.02, ease: "power3.out" });
+            });
+
+            // Mouse leave
+            link.addEventListener('mouseleave', () => {
+                // Animate top chars back
+                gsap.to(topChars, { yPercent: 0, rotationX: 0, duration: 0.5, stagger: 0.02, ease: "power3.in" });
+
+                // Animate bottom chars down
+                gsap.to(bottomChars, { yPercent: 100, rotationX: -60, duration: 0.5, stagger: 0.02, ease: "power3.in" });
+            });
+        });
+    }
+});
