@@ -208,7 +208,7 @@ h6 {
 /* swiper btns  */
 .heading-deatils {
     width: 100%;
-    margin: 0 auto 64px;
+    margin: 0 auto 52px;
 }
 
 .section-title {
@@ -219,11 +219,10 @@ h6 {
     font-weight: 500;
     position: relative;
     margin: 0 0 32px;
-    font-size: clamp(1.75rem, 4vw, 84px);
+    font-size: clamp(1.75rem, 5vw, 84px);
+    line-height: 100%;
 }
-span.highlight {
-    color: var(--orange);
-}
+
 .sub-title {
     color: #ffffff;
     text-align: left;
@@ -231,6 +230,7 @@ span.highlight {
     font-size: clamp(1.2rem, 3vw, 32px);
     letter-spacing: -0.02em;
     font-weight: 400;
+    margin: 0;
 }
 
 
