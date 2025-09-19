@@ -670,9 +670,11 @@ a.mega-mail:hover svg path {
     gap: 20px;
 }
 .footer-right {
-    padding-left: 40px;
     display: grid;
     gap: 32px;
+    width: 100%;
+    max-width: max-content;
+    margin: 0 auto;
 }
 .footer-left {
     display: flex;
@@ -777,6 +779,10 @@ address.footer-address p {
 
 .footer-phone:hover {
     color: var(--theme);
+}
+.footer-nav {
+    display: grid;
+    gap: 16px;
 }
 
 .footer-nav li a {
@@ -883,6 +889,11 @@ address.footer-address p {
     opacity: 1;
     visibility: visible;
 }
+.privacy-policy {
+    display: flex;
+    gap: 24px;
+    margin-top: 44px;
+}
 
 .privacy-policy a {
     color: rgb(255 255 255 / 50%);
@@ -898,10 +909,7 @@ address.footer-address p {
 .privacy-policy a:hover{
     color: var(--theme);
 }
-.privacy-policy {
-    display: flex;
-    gap: 24px;
-}
+
 /* footer end  */
 /* testimonials start */
 .testimonials {
@@ -1079,7 +1087,6 @@ address.footer-address p {
 }
 .feature-icon svg path {
     transition: all 0.3s linear;
-    stroke: var(--secondary-clr);
 }
 /* .feature-card:hover .feature-icon svg path {
     stroke: #fff;
@@ -1130,6 +1137,9 @@ address.footer-address p {
 }
 .why-choose.why-choose-reverse .feature-card:hover {
     background: var(--theme);
+}
+.why-choose .feature-icon svg path {
+    stroke: var(--theme);
 }
 /* why-choose end */
 
@@ -1237,7 +1247,9 @@ address.footer-address p {
 .reinvent-grid .feature-icon {
     margin: 12px 0;
 }
-
+.reinvent-grid .feature-icon path {
+    stroke: var(--secondary-clr);
+}
 .reinvent-card-img {
     width: 100%;
     height: 100%;
@@ -1756,7 +1768,7 @@ address.footer-address p {
     gap: 32px;
 }
 .meet-ofir-content p {
-    font-size: clamp(20px, 2vw, 32px);
+    font-size: clamp(22px, 2.5vw, 32px);
     margin: 0;
 }
 .meet-content-details ul {
@@ -1771,7 +1783,7 @@ address.footer-address p {
     font-size: clamp(24px, 3vw, 44px);
 }
 .team-cards {
-    padding: 52px;
+    padding: 52px 0;
 }
 .team-cards-wrap .grid {
     gap: 1px;
