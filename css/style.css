@@ -396,7 +396,7 @@ span.text.bottom {
 }
 .intro-links a {
     color: #001625;
-    font-size: clamp(1.4rem, 3vw, 52px);
+    font-size: clamp(1.4rem, 3.5vw, 52px);
     transition: all 0.2s linear;
     font-weight: 500;
 }
@@ -632,7 +632,10 @@ a.mega-mail:hover svg path {
 .learn-more:hover{
     color: var(--secondary-clr);
 }
-
+.btns_group .primary-btn {
+    font-size: 18px;
+    text-transform: uppercase;
+}
 .linestyle {
     height: 1px;
     background: rgb(255 255 255 / 30%);
@@ -1053,7 +1056,7 @@ address.footer-address p {
     margin: 48px 0;
 }
 .feature-card span {
-    color: #46b4ff;
+    color:var(--secondary-clr);
     text-align: left;
     font-family: 'Neue Montreal';
     font-size: 32px;
@@ -1076,6 +1079,7 @@ address.footer-address p {
 }
 .feature-icon svg path {
     transition: all 0.3s linear;
+    stroke: var(--secondary-clr);
 }
 /* .feature-card:hover .feature-icon svg path {
     stroke: #fff;
