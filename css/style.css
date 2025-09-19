@@ -327,6 +327,9 @@ h6 {
     z-index: 999;
     display: none;
 }
+.mega-menu .grid {
+    grid-template-columns: 1.5fr 1fr;
+}
 .mega-menu-open-container {
     position: fixed;
     display: flex;
@@ -369,25 +372,26 @@ h6 {
 .mega-menu .container {
     background: #fff;
     color: #001625;
-    padding: 40px 28px 24px;
-    max-width: 1544px;
+    padding: 40px 38px 24px;
+    max-width: 1564px;
 }
 .intro-title {
     color: #001625;
-    font-size: clamp(1.5rem, 4vw, 72px);
+    font-size: clamp(1.5rem, 4vw, 64px);
     font-weight: 400;
     letter-spacing: -0.02em;
 }
-.intro-links  ul{
+.intro-links  ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 40px 80px;
+    gap: 32px 80px;
     justify-items: start;
 }
 .intro-links a {
     color: #001625;
     font-size: clamp(1.4rem, 3vw, 52px);
     transition: all 0.2s linear;
+    font-weight: 500;
 }
 .intro-links a:hover {
     color: var(--theme);
@@ -399,15 +403,17 @@ h6 {
     align-items: center;
     flex-wrap: wrap;
     gap: 24px;
-    margin-top: 20px;
+    margin-top: 184px;
     display: flex;
-    justify-content: space-between;
+    column-gap: 80px;
 }
 a.mega-mail {
     display: inline-flex;
     align-items: center;
     gap: 12px;
     transition: all 0.2s linear;
+    font-size: clamp(1.2rem, 2.5vw, 24px);
+    font-weight: 500;
 }
 a.mega-mail:hover{
     color: var(--theme);
@@ -420,7 +426,8 @@ a.mega-mail:hover svg path {
 }
 .intro-address {
     color: #001625;
-    font-size: 18px; 
+    font-size: clamp(1.2rem, 2.5vw, 24px); 
+    font-weight: 500;
 }
 .intro-phone {
     color: #001625; 
