@@ -1595,6 +1595,11 @@ address.footer-address p {
     letter-spacing: -0.02em;
     font-weight: 500;
     margin: 0;
+    transition: all 0.2s linear;
+}
+
+.contact-info li p:hover {
+    color: var(--theme);
 }
 /* contact page end  */
 
