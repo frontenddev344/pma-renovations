@@ -1598,7 +1598,11 @@ address.footer-address p {
     transition: all 0.2s linear;
 }
 
-.contact-info li p:hover {
+.contact-info li p a{
+    transition: all 0.2s linear;
+}
+
+.contact-info li p a:hover  {
     color: var(--theme);
 }
 /* contact page end  */
