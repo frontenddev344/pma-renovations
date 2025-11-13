@@ -1612,7 +1612,7 @@ address.footer-address p {
     padding: 64px 0 224px;
 }
 .gallery-sec .section-title {
-    font-size: clamp(30px, 6vw, 104px);
+    font-size: clamp(30px, 6vw, 84px);
     line-height: 90%;
     margin-bottom: 124px;
 }
@@ -1857,3 +1857,28 @@ address.footer-address p {
 }
 
 /* about us page end  */
+
+/* secondary banner start  */
+.secondary-banner {
+    position: relative;
+    isolation: isolate;
+    height: 570px;
+}
+.secondary-banner-content {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    background-color: rgba(0 0 0/ 50%);
+}
+.secondary-banner-img {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}
+.secondary-banner-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* secondary banner end  */
