@@ -126,9 +126,6 @@
 	.gallery-sec {
 		padding: 64px 0 164px;
 	}
-	.gallery-sec .section-title {
-		margin-bottom: 84px;
-	}
 	.intro-bottom {
 		column-gap: 24px;
 		justify-content: space-between;
@@ -327,7 +324,7 @@
 		padding: 64px 0 124px;
 	}
 	.gallery-sec .section-title {
-		margin-bottom: 64px;
+		margin-bottom: 44px;
 	}
 	.team-card-content h4, .team-card-content span {
 		font-size: 18px;
@@ -601,7 +598,7 @@
 		color:#fff;
 	}
 	.gallery-sec .section-title {
-		margin-bottom: 44px;
+		margin-bottom: 34px;
 	}
 	.we-are-about .feature-card:nth-of-type(2) {
 		margin-inline: 0;

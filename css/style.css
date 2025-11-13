@@ -1614,11 +1614,15 @@ address.footer-address p {
 .gallery-sec .section-title {
     font-size: clamp(30px, 6vw, 84px);
     line-height: 90%;
-    margin-bottom: 124px;
+    margin-bottom: 64px;
 }
 .gallery-grid .grid {
     gap: 32px;
 }
+.gallery-card {
+    margin-bottom: 40px;
+}
+
 .gallery-grid .grid .item:nth-of-type(even) {
     transform: translateY(25%);
 }
