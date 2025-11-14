@@ -48,6 +48,9 @@
 	.project-cards .swiper-button-prev {
 		right: 100px;
 	}
+	.gallery-internal-photos {
+		padding: 0 20px;
+	}
 }
 @media screen and (max-width:1400px){
 	.secondary-header #main {
@@ -132,6 +135,9 @@
 	}
 	.intro-bottom {
 		margin-top: 124px;
+	}
+	.secondary-banner {
+		height: 370px;
 	}
 	
 }
@@ -335,6 +341,10 @@
 	.meet-ofir-grid {
 		grid-template-columns: 1.5fr 1fr;
 	}
+
+	.buttons-with-text .btns_group {
+		gap: 24px;
+	}
 }
 
 @media screen and (max-width:991px){
@@ -471,6 +481,20 @@
 	}
 	.we-build-content-top {
 		margin: 0 0 52px;
+	}
+
+	.buttons-with-text-content {
+		grid-template-columns: 100%;
+	}
+
+	.secondary-banner {
+		height: 280px;
+	}
+	.internal-photos {
+		width: 100%;
+	}
+	.buttons-with-text {
+		padding: 44px 0;
 	}
 }
 
@@ -610,6 +634,10 @@
 	.we-build {
 		padding: 0;
 	}
+
+	.buttons-with-text {
+		padding: 24px 0;
+	}
 }
 
 @media screen and (max-width:575px){
@@ -715,6 +743,19 @@
 
 	.meet-ofir-img {
 		max-width: 210px;
+	}
+
+	.buttons-with-text .learn-more {
+		font-size: 16px;
+	}
+	.secondary-banner {
+		height: 180px;
+	}
+	.gallery-internal-grid {
+		grid-template-columns: 100%;
+	}
+	.gallery-internal-grid .item:first-child {
+		margin-top:0;
 	}
 }
 

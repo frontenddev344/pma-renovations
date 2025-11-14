@@ -49,52 +49,90 @@ if (typeof Swiper !== 'undefined') {
 
   
 // Projects Gallery Swiper (main + thumbs)
-if (typeof Swiper !== 'undefined') {
-    var pgThumbsEl = document.querySelector('.projects-gallery .pg-thumbs');
-    var pgMainEl = document.querySelector('.projects-gallery .pg-main');
+// if (typeof Swiper !== 'undefined') {
+//     var pgThumbsEl = document.querySelector('.projects-gallery .pg-thumbs');
+//     var pgMainEl = document.querySelector('.projects-gallery .pg-main');
 
-    if (pgThumbsEl && pgMainEl) {
-        // Initialize thumbs swiper
-        var pgThumbsSwiper = new Swiper(pgThumbsEl, {
-            spaceBetween: 30,
-            slidesPerView: 6,
-            freeMode: true,
-            watchSlidesProgress: true,
-            watchSlidesVisibility: true, // important for looped thumbs
-            breakpoints: {
-                300: { slidesPerView: 2 ,
-                    spaceBetween: 15,
-                },
-                575: { 
-                    slidesPerView: 2 ,
-                    spaceBetween: 20,
-                },
-                768: { 
-                    slidesPerView: 3 ,
-                    spaceBetween: 20,
-                },
-                991: { slidesPerView: 4 },
-                1200: { slidesPerView: 6 }
-            }
-        });
+//     if (pgThumbsEl && pgMainEl) {
+//         // Initialize thumbs swiper
+//         var pgThumbsSwiper = new Swiper(pgThumbsEl, {
+//             spaceBetween: 30,
+//             slidesPerView: 6,
+//             freeMode: true,
+//             watchSlidesProgress: true,
+//             watchSlidesVisibility: true, // important for looped thumbs
+//             breakpoints: {
+//                 300: { slidesPerView: 2 ,
+//                     spaceBetween: 15,
+//                 },
+//                 575: { 
+//                     slidesPerView: 2 ,
+//                     spaceBetween: 20,
+//                 },
+//                 768: { 
+//                     slidesPerView: 3 ,
+//                     spaceBetween: 20,
+//                 },
+//                 991: { slidesPerView: 4 },
+//                 1200: { slidesPerView: 6 }
+//             }
+//         });
 
-        // Initialize main swiper
-        var pgMainSwiper = new Swiper(pgMainEl, {
-            spaceBetween: 10,
-            slidesPerView: 1,
-            loop: false,
-            navigation: {
-                nextEl: '.projects-gallery .swiper-button-next',
-                prevEl: '.projects-gallery .swiper-button-prev'
-            },
-            thumbs: {
-                swiper: pgThumbsSwiper
-            }
-        });
-    }
+//         // Initialize main swiper
+//         var pgMainSwiper = new Swiper(pgMainEl, {
+//             spaceBetween: 10,
+//             slidesPerView: 1,
+//             loop: false,
+//             navigation: {
+//                 nextEl: '.projects-gallery .swiper-button-next',
+//                 prevEl: '.projects-gallery .swiper-button-prev'
+//             },
+//             thumbs: {
+//                 swiper: pgThumbsSwiper
+//             }
+//         });
+//     }
+// }
+
+
+if (typeof Swiper !== "undefined") {
+    var galleries = document.querySelectorAll(".projects-gallery");
+
+    galleries.forEach(function (gallery) {
+        var pgThumbsEl = gallery.querySelector(".pg-thumbs");
+        var pgMainEl = gallery.querySelector(".pg-main");
+
+        if (pgThumbsEl && pgMainEl) {
+            var pgThumbsSwiper = new Swiper(pgThumbsEl, {
+                spaceBetween: 30,
+                slidesPerView: 6,
+                freeMode: true,
+                watchSlidesProgress: true,
+                watchSlidesVisibility: true,
+                breakpoints: {
+                    300: { slidesPerView: 2, spaceBetween: 15 },
+                    575: { slidesPerView: 2, spaceBetween: 20 },
+                    768: { slidesPerView: 3, spaceBetween: 20 },
+                    991: { slidesPerView: 4 },
+                    1200: { slidesPerView: 6 },
+                },
+            });
+
+            var pgMainSwiper = new Swiper(pgMainEl, {
+                spaceBetween: 10,
+                slidesPerView: 1,
+                loop: false,
+                navigation: {
+                    nextEl: gallery.querySelector(".swiper-button-next"),
+                    prevEl: gallery.querySelector(".swiper-button-prev"),
+                },
+                thumbs: {
+                    swiper: pgThumbsSwiper,
+                },
+            });
+        }
+    });
 }
-
-
 
   
 
