@@ -2,6 +2,10 @@
     background: transparent;
 }
 
+.site-nav li {
+    position: relative;
+}
+
 .site-nav li:hover ul.submenu {
     opacity: 1;
     visibility: visible;
