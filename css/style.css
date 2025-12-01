@@ -2145,4 +2145,8 @@ address.footer-address p {
     font-style: italic;
     margin: 20px 0;
 }
+
+.about-us-page .secondary-banner-content {
+    background: transparent;
+}
 /* our team page end  */
