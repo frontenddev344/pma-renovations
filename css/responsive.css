@@ -339,7 +339,11 @@
 		padding: 16px;
 	}
 	.meet-ofir-grid {
-		grid-template-columns: 1.5fr 1fr;
+		grid-template-columns: 1fr 2fr;
+	}
+	.meet-ofir-bottom-content {
+		gap: 32px;
+		margin-top: 32px;
 	}
 
 	.buttons-with-text .btns_group {

@@ -1738,16 +1738,16 @@ address.footer-address p {
     font-size: clamp(30px, 6vw, 104px);
 }
 .we-build-content-top {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     justify-content: space-between;
-    gap: 32px;
+    gap: 52px;
     margin: 0 0 84px;
 }
 .we-build-content-top p {
     font-weight: 400;
     line-height: 100%;
-    font-size: clamp(24px, 3vw, 44px);
+    font-size: clamp(24px, 3vw, 36px);
     margin: 0;
     max-width: 800px;
 }
@@ -1785,18 +1785,12 @@ address.footer-address p {
 }
 .meet-ofir-grid {
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 32px;
-    align-items: center;
-}
-.meet-ofir-left {
-    display: flex;
+    grid-template-columns: 1fr 3.5fr;
     gap: 32px;
     align-items: center;
 }
 .meet-ofir-img {
     width: 100%;
-    max-width: 317px;
 }
 .meet-ofir-img img {
     display: block;
@@ -1820,8 +1814,14 @@ address.footer-address p {
     color: var(--secondary-clr);
     margin: 72px 0;
 }
-.meet-ofir-bottom-content h4, .meet-ofir-bottom-content p {
-    font-size: clamp(24px, 3vw, 44px);
+.meet-ofir-bottom-content {
+    display: grid;
+    gap: 72px;
+    margin-top: 72px;
+}
+.meet-ofir-bottom-content p {
+    font-size: clamp(24px, 3vw, 32px);
+    margin: 0;
 }
 .team-cards {
     padding: 52px 0;
@@ -1887,7 +1887,78 @@ address.footer-address p {
 .we-are-about .feature-card:nth-of-type(2) {
     margin-inline: -1px;
 }
+.about-video-section {
+    padding: 124px 0 0;
+}
 
+.about-video-content {
+    position: relative;
+}
+.about-video-img {
+    position: relative;
+}
+
+.about-video-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-video-img::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0 0 0/60%);
+}
+
+.video-play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 144px;
+    height: 144px;
+    border-radius: 50%;
+    background: var(--theme);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.video-play-btn-link {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: radial-gradient(
+  circle at 50% 50%,
+  rgba(85, 164, 218, 1) 0%,
+  rgba(85, 164, 218, 0) 50%,
+  rgba(85, 164, 218, 1) 100%
+);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: #fff;
+    transition: all 0.2s linear;
+}
+
+.video-play-btn-link:hover {
+    color: #fff;
+}
+
+.about-video-modal .modal-content {
+    background: var(--black);
+}
+
+.about-video-modal .modal-header {
+    border: 0;
+}
+
+.about-video-modal .btn-close {
+    filter: invert(1);
+    opacity: 1;
+}
 /* about us page end  */
 
 /* secondary banner start  */
