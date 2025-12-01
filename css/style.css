@@ -305,6 +305,34 @@ span.text.bottom {
     font-weight: 400;
 }
 
+.site-nav li {
+    position: relative;
+}
+
+.site-nav li:hover ul.submenu {
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+}
+
+.site-nav li ul.submenu {
+    display: block;
+    position: absolute;
+    width: max-content;
+    padding: 20px;
+    background: var(--secondary-clr);
+    border: 1px solid rgba(255 255 255 /20%);
+    top: calc(100% + 60px);
+    left: 0;
+    transition: all 0.2s linear;
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: start;
+}
+
 .menu-toggle{
     display: none;
 }
@@ -803,7 +831,7 @@ address.footer-address p {
 }
 .footer-bottom .container {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 2.5fr 1fr;
     align-items: center;
 }
 .footer-bottom .container p {
@@ -1014,7 +1042,7 @@ address.footer-address p {
     margin-top: -35px;
 }
 .bigger-text {
-    font-size: clamp(80px, 13vw, 180px);
+    font-size: clamp(80px, 13vw, 140px);
     letter-spacing: -0.02em;
     font-weight: 500;
     opacity: 0.1;
@@ -1252,7 +1280,7 @@ address.footer-address p {
 }
 .reinvent-card-img {
     width: 100%;
-    height: 100%;
+/*     height: 100%; */
     overflow: hidden;
 }
 .reinvent-card-img img {
@@ -1876,7 +1904,7 @@ address.footer-address p {
     display: flex;
     height: 100%;
     align-items: center;
-    background-color: rgba(0 0 0/ 50%);
+    background-color: rgba(0 0 0/ 30%);
 }
 .secondary-banner-img {
     position: absolute;
@@ -1952,3 +1980,52 @@ address.footer-address p {
 
 
 /* galllery internal page end  */
+
+/* our team page start  */
+.our-team-page .secondary-banner-content {
+    background: transparent;
+}
+
+.team-section {
+    padding: 124px 0;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 94px;
+}
+
+.team-item-img {
+    overflow: hidden;
+}
+
+.team-item-img img {
+    width: 100%;
+    object-fit: cover;
+    transition: all 0.2s linear;
+}
+
+.team-item-img:hover img {
+    transform: scale(1.1);
+}
+
+.team-content {
+    margin-top: 24px;
+    text-align: center;
+}
+.team-content h3 {
+    text-align: center;
+    font-size: clamp(20px,3.5vw,32px);
+    font-weight: 400;
+    margin: 0 0 11px;
+    color: #fff;
+}
+
+.team-content p {
+    font-size: 20px;
+    color: rgb(255 255 255 / 50%);
+    text-align: center;
+    margin: 0;
+}
+/* our team page end  */

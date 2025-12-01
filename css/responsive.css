@@ -345,6 +345,9 @@
 	.buttons-with-text .btns_group {
 		gap: 24px;
 	}
+	.team-grid {
+        gap: 44px;
+    }  
 }
 
 @media screen and (max-width:991px){
@@ -496,6 +499,9 @@
 	.buttons-with-text {
 		padding: 44px 0;
 	}
+	.team-grid {
+        gap: 24px;
+    }  
 }
 
 @media screen and (max-width:768px){
@@ -638,6 +644,16 @@
 	.buttons-with-text {
 		padding: 24px 0;
 	}
+
+	.team-section {
+        padding: 64px 0;
+    }
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .team-content p {
+        font-size: 18px;
+    }
 }
 
 @media screen and (max-width:575px){
@@ -757,6 +773,15 @@
 	.gallery-internal-grid .item:first-child {
 		margin-top:0;
 	}
+	.team-section {
+        padding: 44px 0;
+    }
+    .team-grid {
+        grid-template-columns:100%;
+    }
+    .team-content p {
+        font-size: 16px;
+    }
 }
 
 @media screen and (max-width:480px){
