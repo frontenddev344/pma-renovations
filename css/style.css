@@ -2079,6 +2079,9 @@ address.footer-address p {
     grid-template-columns: repeat(3, 1fr);
     gap: 94px;
 }
+.team-item {
+    cursor: pointer;
+}
 
 .team-item-img {
     overflow: hidden;
@@ -2111,5 +2114,35 @@ address.footer-address p {
     color: rgb(255 255 255 / 50%);
     text-align: center;
     margin: 0;
+}
+
+.team-video-modal .modal-dialog {
+    width: 100%;
+    max-width: 1050px;
+}
+
+.team-video-modal .modal-content {
+    background: var(--black);
+    border: 2px solid #55a4da80;
+}
+.team-video-content p {
+    font-size: clamp(1.2rem, 2.5vw, 24px);
+    margin: 0;
+}
+.team-video-content p:not(:last-child) {
+    margin-bottom: 32px;
+}
+.team-video-modal .modal-header {
+    border: 0;
+}
+
+.team-video-modal .btn-close {
+    filter: invert(1);
+    opacity: 1;
+}
+.team-video-content span {
+    color: rgb(255 255 255 / 50%);
+    font-style: italic;
+    margin: 20px 0;
 }
 /* our team page end  */
